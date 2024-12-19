@@ -1,3 +1,4 @@
+import FlashSale from "../Component/HomePage/FlashSale";
 import HeaderMenu from "../Component/HomePage/HeaderMenu";
 import HeroSection from "../Component/HomePage/HeroSection";
 import Kategori from "../Component/HomePage/Kategori";
@@ -5,13 +6,14 @@ import Kategori from "../Component/HomePage/Kategori";
 const Homepage = () => {
   return (
     <>
-      <div className="p-10 bg-white">
-        <HeroSection />
-        <HeaderMenu />
-      </div>
-      <div className="w-full p-10">
+      <section className="font-['Roboto']">
+        <div className="p-10 bg-white">
+          <HeroSection />
+          <HeaderMenu />
+        </div>
         <Kategori />
-      </div>
+        <FlashSale />
+      </section>
     </>
   );
 };
